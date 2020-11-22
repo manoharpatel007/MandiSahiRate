@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/manohar', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://manoharpatel:<2000Manohar>@cluster0.dqzmx.mongodb.net/<dbname>?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 const db = mongoose.connection;
