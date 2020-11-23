@@ -4,6 +4,10 @@ const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI ||'mongodb://localhost/manohar', {useNewUrlParser: true},{ useUnifiedTopology: true } );
 
 
+
+
+
+
 // mongoose.connect('mongodb+srv://manoharpatel:manohar@cluster0.dqzmx.mongodb.net/<dbname>?retryWrites=true&w=majority', {useNewUrlParser: true},{ useUnifiedTopology: true });
 
 
@@ -17,7 +21,7 @@ mongoose.connect(process.env.MONGODB_URI ||'mongodb://localhost/manohar', {useNe
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
-  console.log("We are Connected with database  ... ")
+  console.log("We are Connected with database ... ")
 });
 
 
