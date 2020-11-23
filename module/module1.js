@@ -1,5 +1,15 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://manoharpatel:<2000Manohar>@cluster0.dqzmx.mongodb.net/<dbname>?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI ||'mongodb://localhost/manohar', {useNewUrlParser: true},{ useUnifiedTopology: true } );
+
+
+// mongoose.connect('mongodb+srv://manoharpatel:manohar@cluster0.dqzmx.mongodb.net/<dbname>?retryWrites=true&w=majority', {useNewUrlParser: true},{ useUnifiedTopology: true });
+
+
+
+
+
+
+
 
 
 const db = mongoose.connection;
@@ -143,7 +153,7 @@ e.save(function (err, mobile) {
   if (err) return console.error(err);
 
 });
-*/
 
+*/
 
 module.exports = mobilemodalw;
