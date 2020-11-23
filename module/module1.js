@@ -8,7 +8,7 @@ mongoose.connect(process.env.MONGODB_URI ||'mongodb://localhost/manohar', {useNe
 
 
 
-// mongoose.connect('mongodb+srv://manoharpatel:manohar@cluster0.dqzmx.mongodb.net/<dbname>?retryWrites=true&w=majority', {useNewUrlParser: true},{ useUnifiedTopology: true });
+
 
 
 
