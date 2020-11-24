@@ -421,5 +421,208 @@ font-weight: bold;
 
 
 
+/* media quary for mobile  */
+
+
+
+@media only screen and (max-width: 768px) {
+    
+    
+    body {
+      background-color: red;
+    }
+
+
+    #container{
+
+        width: 100vw ;
+        height: 100vh ;
+        background-color: rgb(211, 79, 79);
+        
+        
+        
+        
+        }
+
+        #block1{
+    
+            /* background-color: red; */
+        
+            width: 100vw;
+            height: 100px;
+            display: flex;
+            border-bottom: 2px solid black;
+        }
+
+
+
+        #slogan {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50vw;
+            /* background-color: yellowgreen; */
+            font-size: 25px;
+            font-weight: bold;
+            padding: 0px;
+            text-align: center;
+            word-spacing: 10px;
+            color: white;
+        }
+
+
+        #menu {
+            display: flex;
+            width: 50vw;
+            /* background-color: violet; */
+            font-size: 14px;
+            font-weight: bold;
+            padding: 10px;
+            padding-left: 0px;
+        }
+
+        #go {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            font-size: 25px;
+            font-weight: bold;
+            width: 220px;
+            height: 100px;
+            background-color: tomato;
+            border-radius: 40px;
+            position: relative;
+            top: 170px;
+            left: 245px;
+        }
+
+        #dname {
+            /* background-color: rgb(93, 177, 8); */
+            width: 715px;
+            margin: 10px auto;
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 28px;
+        }
+
+        #district {
+            /* background-color: rgb(73, 8, 144); */
+            width: 715px;
+            margin: 10px auto;
+            font-size: 35px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 110px;
+        }
+
+
+        .box {
+            background-color: rgb(45, 81, 69);
+            text-align: center;
+            padding: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 15px;
+            margin: 2px;
+            border: 2px solid black;
+            width: 300px;
+        }
+
+        .welcome {
+            width: 695px;
+            /* background-color: burlywood; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            font-size: 40px;
+            font-weight: bold;
+            position: relative;
+            border-radius: 45px;
+            margin: 10px;
+            position: relative;
+            top: 200px;
+            left: 5px;
+        }
+
+
+        .cname {
+            width: 408px;
+            height: 65px;
+            background-color: rgb(174, 111, 66);
+            position: relative;
+            top: 15px;
+            left: 215px;
+            font-size: 45px;
+            font-weight: bold;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 20px;
+            color: white;
+        }
+
+
+        .gover {
+            width: 420px;
+            height: 50px;
+            background-color: rgb(174, 111, 66);
+            position: relative;
+            top: 40px;
+            left: 215px;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 6px;
+            color: white;
+        }
+
+
+
+
+
+        .insidetable {
+            border-collapse: collapse;
+            margin: 0px;
+            min-width: 685px;
+            text-align: center;
+            min-height: 350px;
+            position: relative;
+            top: 72px;
+            left: 21px;
+            font-size: 30px;
+        }
+
+        
+        
+        
+            footer {
+                position: relative;
+                bottom: 0;
+                width: 100%;
+                height: 60px;
+                background: black;
+            }
+         
+        
+        
+        #F {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-size: 37px;
+            
+            font-weight: bold;
+        }
+
+  }
+
+
 
  
