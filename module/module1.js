@@ -53,26 +53,29 @@ const mobilemodalw = mongoose.model('manohariteam', mobileschemaw);
 
 
 
+
+
+
 const a = new mobilemodalw({
-  date: '20-11-20 ', rice: "123", serial: "*",
-  wheatprice: "1450-1540 ",
-  chanaprice: "1450-1540 ",
-  raharprice: "1450-1540 ",
-  moongprice: "1450-1540 ",
-  dhanprice: "1450-1540 ",
-  krantidhanprice: "1450-1540 ",
-  numdhanprice: "1450-1540 ",
-  soyabeanprice: "1450-1540 ",
-  masoorprice: "1450-1540 ",
-  udhadprice: "1450-1540 ",
-  makkaprice: "1450-1540 ",
-  batriprice: "1450-1540 "
+  date: '26-11-20 ', rice: "45", serial: "1",
+  wheatprice: "106-1459 ",
+  chanaprice: "3560-4851 ",
+  raharprice: "5800-5800 ",
+  moongprice: " 4000-6800 ",
+  dhanprice: "2060-2529 ",
+  krantidhanprice: "1251-1652 ",
+  numdhanprice: "1700-2469 ",
+  soyabeanprice: "3300-4081 ",
+  masoorprice: "4750-5051 ",
+  udhadprice: " --- ",
+  makkaprice: "1101-1348 ",
+  batriprice: "4525-4570 "
 });
 
 
 
 const b = new mobilemodalw({
-  date: '19-11-20 ', rice: "123", serial: "*",
+  date: '25-11-20 ', rice: "123", serial: "2",
   wheatprice: "1450-1540 ",
   chanaprice: "1450-1540 ",
   raharprice: "1450-1540 ",
@@ -91,7 +94,7 @@ const b = new mobilemodalw({
 
 
 const c = new mobilemodalw({
-  date: '18-11-20 ', rice: "123", serial: "*",
+  date: '24-11-20 ', rice: "123", serial: "3",
   wheatprice: "1450-1540 ",
   chanaprice: "1450-1540 ",
   raharprice: "1450-1540 ",
@@ -108,7 +111,7 @@ const c = new mobilemodalw({
 
 
 const d = new mobilemodalw({
-  date: '17-11-20 ', rice: "123", serial: "*",
+  date: '23-11-20 ', rice: "123", serial: "4",
   wheatprice: "1450-1540 ",
   chanaprice: "1450-1540 ",
   raharprice: "1450-1540 ",
@@ -123,7 +126,7 @@ const d = new mobilemodalw({
   batriprice: "1450-1540 "
 });
 const e = new mobilemodalw({
-  date: '16-11-20 ', rice: "123", serial: "*",
+  date: '24-11-20 ', rice: "123", serial: "5",
   wheatprice: "1450-1540 ",
   chanaprice: "1450-1540 ",
   raharprice: "1450-1540 ",
@@ -136,9 +139,9 @@ const e = new mobilemodalw({
   udhadprice: "1450-1540 ",
   makkaprice: "1450-1540 ",
   batriprice: "1450-1540 "
-});
+}); 
 
-/*
+
 a.save(function (err, mobile) {
   if (err) return console.error(err);
 
@@ -160,6 +163,6 @@ e.save(function (err, mobile) {
 
 });
 
-*/
+
 
 module.exports = mobilemodalw;
