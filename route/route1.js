@@ -161,6 +161,8 @@ route.get('/14.ejs', (req,res , next)=>{
     })   
         })
 
+
+
 route.get('/15.ejs', (req,res , next)=>{
 
     sea.exec(function (err , data ) {
@@ -169,6 +171,67 @@ route.get('/15.ejs', (req,res , next)=>{
         res.render("15.ejs" , {price:data});
 
     })   
+        })
+
+
+        route.get('/register', (req,res , next)=>{
+
+            sea.exec(function (err , data ) {
+                if (err) throw err;
+        
+                res.render("register" , {price:data});
+        
+            })   
+                })
+
+        route.post("/register" , async (req,res)=>{
+
+            try {
+
+
+               const dailydata = new wheat({
+
+                date: req.body.date,
+                rice: req.body.rice,
+                serial: req.body.serial,
+
+                wheatprice: req.body.wheatprice,
+                chanaprice: req.body.chanaprice,
+                raharprice: req.body.raharprice,
+                moongprice: req.body.moongprice,
+                dhanprice: req.body.dhanprice,
+                krantidhanprice: req.body.krantidhanprice,
+                numdhanprice: req.body.numdhanprice,
+                soyabeanprice: req.body.soyabeanprice,
+                masoorprice: req.body.masoorprice,
+                udhadprice: req.body.udhadprice,
+                makkaprice: req.body.makkaprice,
+                batriprice: req.body.batriprice
+
+
+               
+
+               }) 
+
+
+              const registered =  await dailydata.save();
+              res.status(201).render("index");
+
+                
+            }
+
+
+
+
+            
+            catch (error) {
+                
+
+                res.status(400).send(error);
+            }
+
+
+
         })
         
 

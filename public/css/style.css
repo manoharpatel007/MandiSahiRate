@@ -130,6 +130,81 @@ ul{
     top: 170px;
     left: 650px;
 }
+
+
+#do {
+
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    width: 60px;
+    height: 30px;
+    background-color: tomato;
+    border-radius: 100px;
+    position: relative;
+    top: 250px;
+    left: 726px;
+}
+
+#faram{
+
+    
+    
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+
+
+    form {
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        width: 325px;
+        
+    }
+
+    form input{
+
+        border-radius: 10px;
+        padding: 10px;
+        margin: 3px;
+        
+        
+    }
+#sir{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 12px;
+    font-weight: bold;
+}
+
+
+#sumbit{
+
+    background-color: tomato;
+    font-size: 10px;
+    font-weight: bold;
+
+    width: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin:  10px auto;
+    cursor: pointer;
+
+    border-style: none;
+    font-size: 15px;
+    font-weight: bold;
+
+}
  
  
  
@@ -466,6 +541,8 @@ footer #F {
 
 
 
+
+
 /* media quary for mobile like Realme 5 TO Realme 7 ( 720px - 1080px)  */
 
 
@@ -581,6 +658,30 @@ footer #F {
             position: relative;
             top: 170px;
             left: 25px;
+        }
+
+        #do {
+
+            text-align: center;
+            font-size: 35px;
+            font-weight: bold;
+            width: 60px;
+            height: 30px;
+            background-color: tomato;
+            border-radius: 100px;
+            position: relative;
+            top: 250px;
+            left: 26px;
+        }
+
+        #faram{
+
+            background-color: violet;
+        }
+
+        form{
+
+            background-color:red;
         }
 
 
