@@ -174,6 +174,129 @@ route.get('/15.ejs', (req,res , next)=>{
         })
 
 
+
+        
+route.get('/16.ejs', (req,res , next)=>{
+
+    sea.exec(function (err , data ) {
+        if (err) throw err;
+
+        res.render("16.ejs" , {price:data});
+
+    })   
+        })
+route.get('/17.ejs', (req,res , next)=>{
+
+    sea.exec(function (err , data ) {
+        if (err) throw err;
+
+        res.render("17.ejs" , {price:data});
+
+    })   
+        })
+route.get('/18.ejs', (req,res , next)=>{
+
+    sea.exec(function (err , data ) {
+        if (err) throw err;
+
+        res.render("18.ejs" , {price:data});
+
+    })   
+        })
+route.get('/19.ejs', (req,res , next)=>{
+
+    sea.exec(function (err , data ) {
+        if (err) throw err;
+
+        res.render("19.ejs" , {price:data});
+
+    })   
+        })
+route.get('/20.ejs', (req,res , next)=>{
+
+    sea.exec(function (err , data ) {
+        if (err) throw err;
+
+        res.render("20.ejs" , {price:data});
+
+    })   
+        })
+route.get('/21.ejs', (req,res , next)=>{
+
+    sea.exec(function (err , data ) {
+        if (err) throw err;
+
+        res.render("21.ejs" , {price:data});
+
+    })   
+        })
+route.get('/22.ejs', (req,res , next)=>{
+
+    sea.exec(function (err , data ) {
+        if (err) throw err;
+
+        res.render("22.ejs" , {price:data});
+
+    })   
+        })
+route.get('/23.ejs', (req,res , next)=>{
+
+    sea.exec(function (err , data ) {
+        if (err) throw err;
+
+        res.render("23.ejs" , {price:data});
+
+    })   
+        })
+route.get('/24.ejs', (req,res , next)=>{
+
+    sea.exec(function (err , data ) {
+        if (err) throw err;
+
+        res.render("24.ejs" , {price:data});
+
+    })   
+        })
+route.get('/25.ejs', (req,res , next)=>{
+
+    sea.exec(function (err , data ) {
+        if (err) throw err;
+
+        res.render("25.ejs" , {price:data});
+
+    })   
+        })
+route.get('/26.ejs', (req,res , next)=>{
+
+    sea.exec(function (err , data ) {
+        if (err) throw err;
+
+        res.render("26.ejs" , {price:data});
+
+    })   
+        })
+route.get('/27.ejs', (req,res , next)=>{
+
+    sea.exec(function (err , data ) {
+        if (err) throw err;
+
+        res.render("27.ejs" , {price:data});
+
+    })   
+        })
+route.get('/28.ejs', (req,res , next)=>{
+
+    sea.exec(function (err , data ) {
+        if (err) throw err;
+
+        res.render("28.ejs" , {price:data});
+
+    })   
+        })
+
+
+
+
         route.get('/register', (req,res , next)=>{
 
             sea.exec(function (err , data ) {
@@ -183,6 +306,10 @@ route.get('/15.ejs', (req,res , next)=>{
         
             })   
                 })
+
+
+
+
 
         route.post("/register" , async (req,res)=>{
 
@@ -234,6 +361,100 @@ route.get('/15.ejs', (req,res , next)=>{
 
         })
         
+
+
+
+
+
+
+
+
+
+
+
+
+
+        route.get('/registerkareli', (req,res , next)=>{
+
+            sea.exec(function (err , data ) {
+                if (err) throw err;
+        
+                res.render("registerkareli" , {price:data});
+        
+            })   
+                })
+
+
+
+
+
+        route.post("/registerkareli" , async (req,res)=>{
+
+            try {
+
+
+               const dailydatakareli = new wheat({
+
+                // date: req.body.date,
+                // rice: req.body.rice,
+                // serial: req.body.serial,
+
+                kareliwheatprice: req.body.kareliwheatprice,
+                karelichanaprice: req.body.karelichanaprice,
+                kareliraharprice: req.body.kareliraharprice,
+                karelimoongprice: req.body.karelimoongprice,
+                karelidhanprice: req.body.karelidhanprice,
+                karelikrantidhanprice: req.body.karelikrantidhanprice,
+                karelinumdhanprice: req.body.karelinumdhanprice,
+                karelisoyabeanprice: req.body.karelisoyabeanprice,
+                karelimasoorprice: req.body.karelimasoorprice,
+                kareliudhadprice: req.body.kareliudhadprice,
+                karelimakkaprice: req.body.karelimakkaprice,
+                karelibatriprice: req.body.karelibatriprice
+
+
+               
+
+               }) 
+
+
+              const registeredkareli =  await dailydatakareli.save();
+              res.status(201).render("index");
+
+                
+            }
+
+
+
+
+            
+            catch (error) {
+                
+
+                res.status(400).send(error);
+            }
+
+
+
+        })
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

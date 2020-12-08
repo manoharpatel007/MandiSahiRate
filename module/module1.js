@@ -43,6 +43,23 @@ const mobileschemaw = new mongoose.Schema({
   rice: String,
   serial: String,
 
+  // karele mandi 
+
+  kareliwheatprice: String,
+  karelichanaprice: String,
+  kareliraharprice: String,
+  karelimoongprice: String,
+  karelidhanprice: String,
+  karelikrantidhanprice: String,
+  karelinumdhanprice: String,
+  karelisoyabeanprice: String,
+  karelimasoorprice: String,
+  kareliudhadprice: String,
+  karelimakkaprice: String,
+  karelibatriprice: String
+
+
+
 
 
 });
@@ -51,7 +68,7 @@ const mobilemodalw = mongoose.model('manohariteam', mobileschemaw);
 
 
 
-
+/*
 
 
 
@@ -140,7 +157,7 @@ const e = new mobilemodalw({
   makkaprice: "1150-1340 ",
   batriprice: "4525-4525 "
 }); 
-/*
+
 
 a.save(function (err, mobile) {
   if (err) return console.error(err);

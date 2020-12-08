@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+   
+    <title>MandiSahiRate.Online</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+<link rel="stylesheet" href="../public/css/new.css">
+
+</head>
+
+<body>
+
+    <div id="container">
+
+
+
+        <div id="block1">
+
+
+            <div id="slogan">
+
+                <p> जय जवान जय किसान </p>
+
+            </div>
+
+
+            <div id="menu">
+
+                <ul>
+
+                    <li> <a href="index.ejs">घर</a> </li>
+                    <li> <a href="#"> हमसे संपर्क करें </a> </li>
+                    <li> <a href="#"> हमारे बारे में </a> </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div id="block2">
+
+
+            
+
+            <div id="block21">
+
+
+              <div class="box"> <a href="17.ejs"> गेहूँ </a> </div>
+              <div class="box"> <a href="18.ejs"> चना  </a> </div>
+              <div class="box"> <a href="19.ejs"> राहर  </a> </div>
+              <div class="box"> <a href="20.ejs">मूंग</a> </div>
+              <div class="box"> <a href="21.ejs">धान (P1) </a> </div>
+
+
+            </div>
+
+
+
+            <div id="block22">
+
+
+
+              <div class="box"> <a href="22.ejs">क्रांति धान </a> </div>
+              <div class="box"> <a href="23.ejs"> धान (1121)</a> </div>
+              <div class="box"> <a href="24.ejs">सोयाबीन</a> </div>
+              <div class="box"> <a href="25.ejs">मसूर</a> </div>
+              <div class="box"> <a href="26.ejs">उड़द </a> </div>
+
+
+            </div>
+
+
+            <div id="block23">
+
+
+
+              <div class="box"> <a href="27.ejs">मक्का</a> </div>
+              <div class="box"> <a href="28.ejs">बटरी </a> </div>
+              <div class="box"> <a href="#">- - -</a> </div>
+              <div class="box"> <a href="#">- - -</a> </div>
+              <div class="box"> <a href="#">- - -</a> </div>
+
+
+            </div>
+        
+  
+          
+          
+  
+      
+      
+      </div>
+
+
+
+
+        <div id="block3">
+
+            <div class="cname">
+
+                <p>गेहूँ</p>
+            </div>
+
+
+            <div class="gover">
+
+
+                <p>
+                    सरकारी दर : 1840 (+160) रुपये
+                </p>
+
+
+            </div>
+
+
+            <div>
+
+    <table class="insidetable"  id="w">
+
+
+        <tr>
+        
+            <th>क्रमांक</th>
+            <th>तारीख</th>
+            <th> के बीच में </th>
+            <th> उतार चढ़ाव</th>
+            
+            </tr>
+
+        <% price.forEach(function(row){ %>
+
+            <tr>
+               <td><%= row.serial %></td>
+               <td><%= row.date %></td>
+               <td><%= row.kareliwheatprice %></td>
+               <td><%= row.rice %></td>
+            </tr>
+
+
+       <%  }) %>
+
+       
+
+
+       
+
+    
+
+       
+
+     
+
+     </table>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+        <footer>
+
+            <P id="F">
+
+                सभी अधिकार सुरक्षित © MandiSahiRate 2020
+
+            </P>
+
+        </footer>
+
+
+
+
+
+</body>
+
+</html>
