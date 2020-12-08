@@ -181,7 +181,7 @@ route.get('/16.ejs', (req,res , next)=>{
     sea.exec(function (err , data ) {
         if (err) throw err;
 
-        res.render("16.ejs" , {price:data});
+        res.render("16.ejs" , {pricekareli:data});
 
     })   
         })
@@ -190,7 +190,7 @@ route.get('/17.ejs', (req,res , next)=>{
     sea.exec(function (err , data ) {
         if (err) throw err;
 
-        res.render("17.ejs" , {price:data});
+        res.render("17.ejs" , {pricekareli:data});
 
     })   
         })
@@ -199,7 +199,7 @@ route.get('/18.ejs', (req,res , next)=>{
     sea.exec(function (err , data ) {
         if (err) throw err;
 
-        res.render("18.ejs" , {price:data});
+        res.render("18.ejs" , {pricekareli:data});
 
     })   
         })
@@ -208,7 +208,7 @@ route.get('/19.ejs', (req,res , next)=>{
     sea.exec(function (err , data ) {
         if (err) throw err;
 
-        res.render("19.ejs" , {price:data});
+        res.render("19.ejs" , {pricekareli:data});
 
     })   
         })
@@ -217,7 +217,7 @@ route.get('/20.ejs', (req,res , next)=>{
     sea.exec(function (err , data ) {
         if (err) throw err;
 
-        res.render("20.ejs" , {price:data});
+        res.render("20.ejs" , {pricekareli:data});
 
     })   
         })
@@ -226,7 +226,7 @@ route.get('/21.ejs', (req,res , next)=>{
     sea.exec(function (err , data ) {
         if (err) throw err;
 
-        res.render("21.ejs" , {price:data});
+        res.render("21.ejs" , {pricekareli:data});
 
     })   
         })
@@ -235,7 +235,7 @@ route.get('/22.ejs', (req,res , next)=>{
     sea.exec(function (err , data ) {
         if (err) throw err;
 
-        res.render("22.ejs" , {price:data});
+        res.render("22.ejs" , {pricekareli:data});
 
     })   
         })
@@ -244,7 +244,7 @@ route.get('/23.ejs', (req,res , next)=>{
     sea.exec(function (err , data ) {
         if (err) throw err;
 
-        res.render("23.ejs" , {price:data});
+        res.render("23.ejs" , {pricekareli:data});
 
     })   
         })
@@ -253,7 +253,7 @@ route.get('/24.ejs', (req,res , next)=>{
     sea.exec(function (err , data ) {
         if (err) throw err;
 
-        res.render("24.ejs" , {price:data});
+        res.render("24.ejs" , {pricekareli:data});
 
     })   
         })
@@ -262,7 +262,7 @@ route.get('/25.ejs', (req,res , next)=>{
     sea.exec(function (err , data ) {
         if (err) throw err;
 
-        res.render("25.ejs" , {price:data});
+        res.render("25.ejs" , {pricekareli:data});
 
     })   
         })
@@ -271,7 +271,7 @@ route.get('/26.ejs', (req,res , next)=>{
     sea.exec(function (err , data ) {
         if (err) throw err;
 
-        res.render("26.ejs" , {price:data});
+        res.render("26.ejs" , {pricekareli:data});
 
     })   
         })
@@ -280,7 +280,7 @@ route.get('/27.ejs', (req,res , next)=>{
     sea.exec(function (err , data ) {
         if (err) throw err;
 
-        res.render("27.ejs" , {price:data});
+        res.render("27.ejs" , {pricekareli:data});
 
     })   
         })
@@ -289,7 +289,7 @@ route.get('/28.ejs', (req,res , next)=>{
     sea.exec(function (err , data ) {
         if (err) throw err;
 
-        res.render("28.ejs" , {price:data});
+        res.render("28.ejs" , {pricekareli:data});
 
     })   
         })
@@ -379,7 +379,7 @@ route.get('/28.ejs', (req,res , next)=>{
             sea.exec(function (err , data ) {
                 if (err) throw err;
         
-                res.render("registerkareli" , {price:data});
+                res.render("registerkareli" , {pricekareli:data});
         
             })   
                 })
