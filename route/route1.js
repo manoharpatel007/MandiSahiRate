@@ -395,9 +395,9 @@ route.get('/28.ejs', (req,res , next)=>{
 
                const dailydatakareli = new wheat({
 
-                karelidate: req.body.date,
-                karelirice: req.body.rice,
-                kareliserial: req.body.serial,
+                karelidate: req.body.karelidate,
+                karelirice: req.body.karelirice,
+                kareliserial: req.body.kareliserial,
 
                 kareliwheatprice: req.body.kareliwheatprice,
                 karelichanaprice: req.body.karelichanaprice,
