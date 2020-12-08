@@ -44,7 +44,11 @@ const mobileschemaw = new mongoose.Schema({
   serial: String,
 
   // karele mandi 
+  karelidate: String,
+  karelirice: String,
+  kareliserial: String,
 
+  
   kareliwheatprice: String,
   karelichanaprice: String,
   kareliraharprice: String,
