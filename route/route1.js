@@ -284,12 +284,25 @@ route.get('/27.ejs', (req,res , next)=>{
 
     })   
         })
+
+
 route.get('/28.ejs', (req,res , next)=>{
 
     sea.exec(function (err , data ) {
         if (err) throw err;
 
         res.render("28.ejs" , {pricekareli:data});
+
+    })   
+        })
+
+
+route.get('/contact.ejs', (req,res , next)=>{
+
+    sea.exec(function (err , data ) {
+        if (err) throw err;
+
+        res.render("contact.ejs" , {pricekareli:data});
 
     })   
         })
