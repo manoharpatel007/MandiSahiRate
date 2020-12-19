@@ -403,7 +403,7 @@ footer #F {
 .insidetable{
     border-collapse: collapse;
     margin: 0rem;
-    min-width: 100rem;
+    min-width: 95rem;
     text-align: center;
     min-height: 35rem;
     position: relative;
@@ -450,7 +450,7 @@ footer #F {
     background-color: rgb(174, 111, 66);
     position: relative;
     top: 1.5rem;
-    left: 4.5rem;
+    left: 44.5rem;
     font-size: 4.5rem;
     font-weight: bold;
     text-align: center;
