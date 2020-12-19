@@ -342,7 +342,7 @@ footer #F {
 
     
     width: 98.5rem;
-    margin: 1rem auto;
+    margin: 1rem ;
     font-size: 3rem;
     text-align: center;
     font-weight: bold;
@@ -368,7 +368,7 @@ footer #F {
     margin: 1rem;
     position: relative;
     top: 20rem;
-    left: 12rem;
+    left: 10rem;
 
 }
 
