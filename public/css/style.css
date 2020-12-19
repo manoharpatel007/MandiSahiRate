@@ -387,7 +387,7 @@ footer #F {
     background-color: rgb(45, 81, 69);
     text-align: center;
     padding: 1rem;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: bold;
     border-radius: 1.5rem;
     margin: .2rem;
@@ -408,7 +408,7 @@ footer #F {
     min-height: 35rem;
     position: relative;
     top: 7.2rem;
-    left: 20rem;
+    left: 15rem;
     font-size: 3rem;
 
 }
