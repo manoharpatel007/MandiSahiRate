@@ -505,3 +505,23 @@ footer #F {
     padding: .5rem;
     margin: 2rem;
 }
+
+
+@media(max-width : 768px){
+
+    html{
+
+        font-size: 43.75%;
+    }
+}
+
+
+@media(max-width : 600px){
+
+    html{
+
+        font-size: 37.5%;
+    }
+}
+
+
