@@ -86,9 +86,9 @@ ul{
  
  width: 50vw;
  /* background-color: yellowgreen; */
- font-size: 4.5rem;
+ font-size: 3rem;
  font-weight: bold;
- padding: 0rem;
+ padding: 0.5rem;
  text-align: center;
  word-spacing: 1rem;
  color: black;
@@ -112,7 +112,7 @@ ul{
  
  
      list-style: none;
-     margin: 3rem;
+     margin: 1.5rem;
      
  }
  
@@ -138,11 +138,11 @@ ul{
     border-radius: 4rem;
     position: relative;
     top: 17rem;
-    left: 65rem;
+    left: 40rem;
 }
 
 
-#do {
+#donot {
 
     text-align: center;
     font-size: 3.5rem;
@@ -153,7 +153,7 @@ ul{
     border-radius: 10rem;
     position: relative;
     top: 25rem;
-    left: 72.6rem;
+    left: 40.6rem;
 }
 
 #faram{
@@ -342,7 +342,7 @@ footer #F {
 
     
     width: 98.5rem;
-    margin: 1rem auto;
+    margin: 1rem ;
     font-size: 3rem;
     text-align: center;
     font-weight: bold;
@@ -368,7 +368,7 @@ footer #F {
     margin: 1rem;
     position: relative;
     top: 20rem;
-    left: 31rem;
+    left: 10rem;
 
 }
 
@@ -387,7 +387,7 @@ footer #F {
     background-color: rgb(45, 81, 69);
     text-align: center;
     padding: 1rem;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: bold;
     border-radius: 1.5rem;
     margin: .2rem;
@@ -403,12 +403,12 @@ footer #F {
 .insidetable{
     border-collapse: collapse;
     margin: 0rem;
-    min-width: 95rem;
+    min-width: 70rem;
     text-align: center;
     min-height: 35rem;
     position: relative;
     top: 7.2rem;
-    left: 20rem;
+    left: 10rem;
     font-size: 3rem;
 
 }
@@ -431,7 +431,7 @@ footer #F {
     background-color: rgb(174, 111, 66);
     position: relative;
     top: 4rem;
-    left: 45rem;
+    left: 28rem;
     font-size: 2.8rem;
     font-weight: bold;
     text-align: center;
@@ -450,7 +450,7 @@ footer #F {
     background-color: rgb(174, 111, 66);
     position: relative;
     top: 1.5rem;
-    left: 44.5rem;
+    left: 28.5rem;
     font-size: 4.5rem;
     font-weight: bold;
     text-align: center;
