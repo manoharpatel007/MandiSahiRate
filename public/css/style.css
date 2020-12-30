@@ -115,6 +115,40 @@ ul{
      margin: 1.5rem;
      
  }
+
+ .login{
+
+    /* background-color: red;  */
+    width: 6rem;
+    position: relative;
+    top: 3rem;
+    right: 9rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+
+ }
+
+ .mandiname{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    width: 42rem;
+    height: 7rem;
+    background-color: #41d9b6;
+    border-radius: 4rem;
+    margin: 8.8rem auto;
+
+
+
+
+ }
  
  a{
  
@@ -274,7 +308,7 @@ ul{
 
     position: relative;
     top: 0rem;
-    height: 55rem;
+    height: 65rem;
     width: 100%;
     
 }

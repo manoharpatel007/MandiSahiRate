@@ -307,6 +307,16 @@ route.get('/contact.ejs', (req,res , next)=>{
     })   
         })
 
+route.get('/login.ejs', (req,res , next)=>{
+
+    sea.exec(function (err , data ) {
+        if (err) throw err;
+
+        res.render("login.ejs" , {pricekareli:data});
+
+    })   
+        })
+
 
 
 
@@ -319,6 +329,9 @@ route.get('/contact.ejs', (req,res , next)=>{
         
             })   
                 })
+
+
+        
 
 
 
