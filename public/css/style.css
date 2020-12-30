@@ -118,15 +118,15 @@ ul{
 
  .login{
 
-    /* background-color: red;  */
-    width: 6rem;
-    position: relative;
-    top: 3rem;
-    right: 9rem;
-    height: 2rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
+       /* background-color: red; */
+       width: 6rem;
+       position: relative;
+       top: 14rem;
+       right: 1rem;
+       height: 2rem;
+       font-size: 1.5rem;
+       font-weight: bold;
+       
 
  }
 
