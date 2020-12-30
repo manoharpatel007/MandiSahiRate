@@ -5,19 +5,6 @@ mongoose.connect(process.env.MONGODB_URI ||'mongodb://localhost/manohar', {useNe
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
@@ -40,8 +27,28 @@ const mobileschemaw = new mongoose.Schema({
   batriprice: String,
 
   date: String,
-  rice: String,
+  // rice: String,
   serial: String,
+
+
+
+  // Gadarwara Rice And Fall 
+
+
+  Ricewheatprice: String,
+  Ricechanaprice: String,
+  Riceraharprice: String,
+  Ricemoongprice: String,
+  Ricedhanprice: String,
+  Ricekrantidhanprice: String,
+  Ricenumdhanprice: String,
+  Ricesoyabeanprice: String,
+  Ricemasoorprice: String,
+  Riceudhadprice: String,
+  Ricemakkaprice: String,
+  Ricebatriprice: String,
+
+
 
   // karele mandi 
   karelidate: String,

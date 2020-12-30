@@ -332,7 +332,7 @@ route.get('/contact.ejs', (req,res , next)=>{
                const dailydata = new wheat({
 
                 date: req.body.date,
-                rice: req.body.rice,
+                // rice: req.body.rice,
                 serial: req.body.serial,
 
                 wheatprice: req.body.wheatprice,
@@ -346,7 +346,27 @@ route.get('/contact.ejs', (req,res , next)=>{
                 masoorprice: req.body.masoorprice,
                 udhadprice: req.body.udhadprice,
                 makkaprice: req.body.makkaprice,
-                batriprice: req.body.batriprice
+                batriprice: req.body.batriprice,
+
+
+
+                // Rice and Fall 
+
+                Ricewheatprice: req.body.Ricewheatprice,
+                Ricechanaprice: req.body.Ricechanaprice,
+                Riceraharprice: req.body.Riceraharprice,
+                Ricemoongprice: req.body.Ricemoongprice,
+                Ricedhanprice: req.body.Ricedhanprice,
+                Ricekrantidhanprice: req.body.Ricekrantidhanprice,
+                Ricenumdhanprice: req.body.Ricenumdhanprice,
+                Ricesoyabeanprice: req.body.Ricesoyabeanprice,
+                Ricemasoorprice: req.body.Ricemasoorprice,
+                Riceudhadprice: req.body.Riceudhadprice,
+                Ricemakkaprice: req.body.Ricemakkaprice,
+                Ricebatriprice: req.body.Ricebatriprice
+
+
+
 
 
                
