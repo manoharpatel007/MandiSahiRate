@@ -67,7 +67,23 @@ const mobileschemaw = new mongoose.Schema({
   karelimasoorprice: String,
   kareliudhadprice: String,
   karelimakkaprice: String,
-  karelibatriprice: String
+  karelibatriprice: String,
+
+  //Kareli Rice And Fall 
+
+
+  Ricekareliwheatprice: String,
+  Ricekarelichanaprice: String,
+  Ricekareliraharprice: String,
+  Ricekarelimoongprice: String,
+  Ricekarelidhanprice: String,
+  Ricekarelikrantidhanprice: String,
+  Ricekarelinumdhanprice: String,
+  Ricekarelisoyabeanprice: String,
+  Ricekarelimasoorprice: String,
+  Ricekareliudhadprice: String,
+  Ricekarelimakkaprice: String,
+  Ricekarelibatriprice: String
 
 
 

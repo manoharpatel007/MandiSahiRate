@@ -429,7 +429,6 @@ route.get('/contact.ejs', (req,res , next)=>{
                const dailydatakareli = new wheat({
 
                 karelidate: req.body.karelidate,
-                karelirice: req.body.karelirice,
                 kareliserial: req.body.kareliserial,
 
                 kareliwheatprice: req.body.kareliwheatprice,
@@ -443,7 +442,21 @@ route.get('/contact.ejs', (req,res , next)=>{
                 karelimasoorprice: req.body.karelimasoorprice,
                 kareliudhadprice: req.body.kareliudhadprice,
                 karelimakkaprice: req.body.karelimakkaprice,
-                karelibatriprice: req.body.karelibatriprice
+                karelibatriprice: req.body.karelibatriprice,
+
+// Rice And Fall 
+                Ricekareliwheatprice: req.body.Ricekareliwheatprice,
+                Ricekarelichanaprice: req.body.Ricekarelichanaprice,
+                Ricekareliraharprice: req.body.Ricekareliraharprice,
+                Ricekarelimoongprice: req.body.Ricekarelimoongprice,
+                Ricekarelidhanprice: req.body.Ricekarelidhanprice,
+                Ricekarelikrantidhanprice: req.body.Ricekarelikrantidhanprice,
+                Ricekarelinumdhanprice: req.body.Ricekarelinumdhanprice,
+                Ricekarelisoyabeanprice: req.body.Ricekarelisoyabeanprice,
+                Ricekarelimasoorprice: req.body.Ricekarelimasoorprice,
+                Ricekareliudhadprice: req.body.Ricekareliudhadprice,
+                Ricekarelimakkaprice: req.body.Ricekarelimakkaprice,
+                Ricekarelibatriprice: req.body.Ricekarelibatriprice
 
 
                
