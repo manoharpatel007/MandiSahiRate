@@ -83,8 +83,13 @@ const mobileschemaw = new mongoose.Schema({
   Ricekarelimasoorprice: String,
   Ricekareliudhadprice: String,
   Ricekarelimakkaprice: String,
-  Ricekarelibatriprice: String
+  Ricekarelibatriprice: String,
 
+
+  // Login Detailes 
+
+  username : String,
+  password  : String
 
 
 

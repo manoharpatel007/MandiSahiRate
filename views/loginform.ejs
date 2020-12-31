@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MandiSahiRate.Online</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+
+<style>
+    * {
+
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    html {
+
+        font-size: 62.5%;
+    }
+
+    .form {
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: red; */
+        width: 40%;
+        margin: 8rem auto;
+
+    }
+
+
+
+    .heading {
+        display: flex;
+        width: 100%;
+        height: 7rem;
+        background-color: violet;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        font-weight: bold;
+
+
+    }
+
+    .inputform {
+
+        display: flex;
+        background-color: thistle;
+        margin: auto;
+        width: 100%;
+        height: 25rem;
+        justify-content: center;
+        flex-direction: column;
+        padding: 6rem 2rem;
+
+
+    }
+
+    .inputform input {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: .1rem;
+        /* border: none; */
+
+    }
+
+
+
+
+    .buttonform {
+
+        background-color: violet;
+        margin: auto;
+        width: 100%;
+        height: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .button{
+
+        font-size: 2rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    /* margin-top: 1.5rem; */
+    cursor: pointer;
+
+    }
+</style>
+
+<body>
+
+
+
+    <div id="block1">
+
+
+
+        <div id="slogan">
+
+            <p> जय जवान जय किसान </p>
+
+        </div>
+
+
+        <div id="menu">
+
+            <ul>
+
+                <li> <a href="index.ejs">घर</a> </li>
+                <li> <a href="contact.ejs"> हमसे संपर्क करें </a> </li>
+                <li> <a href="#"> हमारे बारे में </a> </li>
+
+
+            </ul>
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="form">
+
+        <form action="/loginform" method="post">
+            <div class="heading">Login Form </div>
+
+            <div class="inputform">
+
+                <input type="text" name="username" id="username" placeholder="Enter Your Username">
+                <input type="password" name="password" id=" password" placeholder="Enter Your Password">
+
+            </div>
+
+            <div class="buttonform">
+                <input type="submit" value="Submit" class="button">
+                
+            </div>
+
+        </form>
+
+    </div>
+
+    <footer>
+
+        <P id="F">
+
+            सभी अधिकार सुरक्षित © MandiSahiRate 2020
+
+        </P>
+
+    </footer>
+
+</body>
+
+</html>

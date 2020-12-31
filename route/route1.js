@@ -307,15 +307,44 @@ route.get('/contact.ejs', (req,res , next)=>{
     })   
         })
 
-route.get('/login.ejs', (req,res , next)=>{
+route.get('/loginform', (req,res , next)=>{
 
     sea.exec(function (err , data ) {
         if (err) throw err;
 
-        res.render("login.ejs" , {pricekareli:data});
+        res.render("loginform" , {pricekareli:data});
 
     })   
         })
+
+
+
+        
+        route.post("/loginform" , async (req,res)=>{
+
+            try {
+
+
+               const logindata = new wheat({
+
+                username: req.body.username,
+                password: req.body.password
+               
+               }) 
+
+
+              const registeredlogin =  await logindata.save();
+              res.status(201).render("login");
+
+                
+            }catch (error) {
+                
+                res.status(400).send(error);
+            }
+
+
+        })
+        
 
 
 
