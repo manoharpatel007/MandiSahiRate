@@ -318,8 +318,58 @@ route.get('/loginform', (req,res , next)=>{
         })
 
 
+route.get('/login', (req,res , next)=>{
+
+    sea.exec(function (err , data ) {
+        if (err) throw err;
+
+        res.render("login" , {pricekareli:data});
+
+    })   
+        })
+
+
+
+// For Login
+
+
+
+        //  route.post("/login" , async (req,res)=>{
+
+        //     try {
+
+        //         const username = req.body.username;
+        //         const password = req.body.password;
+
+
+        //         // console.log(`The username is ${username}  And Password Is ${password}`)
+
+        //   const userkaname =     await  wheat.findOne({username:username});
+        // //   console.log(userkaname.password);
+
+        // if (username.password ===password) {
+
+        //     res.status(201).render("login");
+            
+        // }
 
         
+        //     }catch (error) {
+                
+        //         // res.status(400).send(error);
+        //         alert("Username Or Password Not Correct ... :( ")
+        //     }
+
+
+        // })
+
+        
+
+
+
+        // For Registration 
+
+
         route.post("/loginform" , async (req,res)=>{
 
             try {
@@ -329,7 +379,7 @@ route.get('/loginform', (req,res , next)=>{
 
                 username: req.body.username,
                 password: req.body.password
-               
+
                }) 
 
 
