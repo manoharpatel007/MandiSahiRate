@@ -323,30 +323,30 @@ route.get('/loginform', (req, res, next) => {
 // For Registration 
 
 
-// route.post("/loginform", async (req, res) => {
+route.post("/loginform", async (req, res) => {
 
-//     try {
-
-
-//         const logindata = new wheat({
-
-//             username: req.body.username,
-//             password: req.body.password
-
-//         })
+    try {
 
 
-//         const registeredlogin = await logindata.save();
-//         res.status(201).render("login");
+        const logindata = new wheat({
+
+            username: req.body.username,
+            password: req.body.password
+
+        })
 
 
-//     } catch (error) {
-
-//         res.status(400).send(error);
-//     }
+        const registeredlogin = await logindata.save();
+        res.status(201).render("login");
 
 
-// })
+    } catch (error) {
+
+        res.status(400).send(error);
+    }
+
+
+})
 
 
 
