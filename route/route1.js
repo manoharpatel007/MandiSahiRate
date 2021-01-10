@@ -351,6 +351,7 @@ route.get('/loginform', (req, res, next) => {
 
 
 // For Login
+/*
 
 app.post("/login",async (req,res)=>{
 
@@ -391,7 +392,7 @@ app.post("/login",async (req,res)=>{
 
 
 
-
+*/
 
 route.get('/register', (req, res, next) => {
 
