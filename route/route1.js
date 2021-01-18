@@ -307,7 +307,7 @@ route.get('/contact.ejs', (req, res, next) => {
     })
 })
 
-
+// Routing for Registration/login form : 
 
 route.get('/loginform', (req, res, next) => {
     
@@ -320,79 +320,114 @@ route.get('/loginform', (req, res, next) => {
 })
 
 
-// For Registration 
+// For Registration Of Volunteers : 
 
 
-route.post("/loginform", async (req, res) => {
+
+// route.post("/loginform", async (req, res) => {
+
+//     try {
+
+
+//         const logindata = new wheat({
+
+//             username: req.body.username,
+//             password: req.body.password
+
+//         })
+
+
+//         const registeredlogin = await logindata.save();
+//         res.status(201).render("login");
+
+
+//     } catch (error) {
+
+//         res.status(400).send(error);
+//     }
+
+
+// })
+
+
+// For Login Form : 
+
+
+
+route.post("/loginform",  async (req,res)=>{
+
 
     try {
 
 
-        const logindata = new wheat({
 
-            username: req.body.username,
-            password: req.body.password
+       const entered_username = req.body.username;
+       const entered_password = req.body.password;
 
-        })
-
-
-        const registeredlogin = await logindata.save();
-        res.status(201).render("login");
+    //    console.log(`The entered_username is ${entered_username} and The entered_password is ${entered_password}`);
 
 
-    } catch (error) {
+        const stored_username =  await wheat.findOne({username : entered_username });
 
-        res.status(400).send(error);
+
+        // res.send(stored_username.password);    console.log(stored_username);
+
+
+        if (stored_username.password === entered_password ) {
+
+            res.render("login");
+            
+        }
+
+        else{
+
+            // res.send("password are not matching");
+            alert("Invalid Login Details :( ");
+        }
+
+
+
+
+        
     }
+    
 
+    
+    catch (error) {
+
+        res.send("Invalid Login Details :(  ");
+        
+    }
 
 })
 
 
 
-// For Login
-/*
-
-app.post("/login",async (req,res)=>{
-
-    try {
-        
-
-        const enteredusername = req.body.username;
-        const enteredPassword = req.body.password;
-
-        const username_is_ok =  await modulus.findOne({username:enteredusername});
-        // console.log(email_is_ok);
-        // console.log(email_is_ok.password);  ---> data base ka password 
-
-        if (username_is_ok.password  === enteredPassword ) {
-
-            res.render("index");
-            
-        } else {
-
-            alert("Invalid Login Details :( ");
-
-            
-        }
-
-        
-        // console.log(`${enteredEmail} and ${enteredPassword}`);
-    }
-    
-    catch (error) {
-
-        res.send("Invalid Login Details ");
-        
-    }
-
-   
-
-});
 
 
 
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Registration form for filling rates .... 
 
 route.get('/register', (req, res, next) => {
 
